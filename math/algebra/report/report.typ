@@ -13,21 +13,10 @@
 
 #set heading(numbering: "1.1.1.")
 
-#align(center, block[
-	#text(size: 20pt, weight: "bold")[СОДЕРЖАНИЕ]
-])
-
-#columns(2, gutter: 8pt)[
-	#outline(title: none)
-]
-
-#pagebreak()
+#set page(numbering: "1")
 
 #align(center, block[
 	= 10-адические числа
-])
-#align(center, block[
-	== Теория
 ])
 #align(center, block[
 	== Вопросы
