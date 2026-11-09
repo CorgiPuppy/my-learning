@@ -67,3 +67,19 @@
 ])
 #let codeblock = read("../src/primes/sieve.cpp")
 #raw(codeblock, block: true, lang: "c++")
+
+#pagebreak()
+
+#align(center, block[
+	= Модульная арифметика
+])
+#align(center, block[
+	== Теория
+])
+$ (A + B) % m = ((A % m) + (B % m)) % m, $
+$ (A - B) % m = ((A % m) - (B % m)) % m, $
+$ (A * B) % m = ((A % m) * (B % m)) % m, $
+где $(A, B, m in ZZ).$ 
+#align(center, block[
+	== Советы по решению
+])
