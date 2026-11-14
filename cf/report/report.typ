@@ -38,6 +38,7 @@
 ])
 + Писать условие и рассуждения на бумаге
 + Хранить результаты сразу в #emph[long long] вместо #emph[int]
++ Получить представление об асимптотике ожидаемого решения можно по заданным ограничениям на размер входа. Как правило, чтобы уложиться во временные рамки (несколько секунд), программа должна совершать $10^8$ - $10^9$ операций. Соответственно, при ограничениях $1 <= n <= 10^4$, скорее всего, ожидается решение с асимптотикой $O(n^2)$ или $O(n^2 log(n))$, а при $1 <= n <= 10^6$ - с асимптотикой $O(n)$ или $O(n log(n))$
 #align(center, block[
 	= Хранение результатов и вывод
 ])
@@ -74,12 +75,27 @@
 	= Модульная арифметика
 ])
 #align(center, block[
-	== Теория
+	== Сумма, вычитание и произведение по модулю
 ])
 $ (A + B) % m = ((A % m) + (B % m)) % m, $
 $ (A - B) % m = ((A % m) - (B % m)) % m, $
 $ (A * B) % m = ((A % m) * (B % m)) % m, $
 где $(A, B, m in ZZ).$ 
+#align(center, block[
+	== Возведение в степень за O(b), где b - степень
+])
+#let codeblock = read("../src/modularArithmetic/pow.cpp")
+#raw(codeblock, block: true, lang: "c++")
+#align(center, block[
+	== Возведение в степень за O(log(b)), где b - степень
+])
+#let codeblock = read("../src/modularArithmetic/powbin.cpp")
+#raw(codeblock, block: true, lang: "c++")
+#align(center, block[
+	== Возведение в степень по модулю
+])
+#let codeblock = read("../src/modularArithmetic/powmod.cpp")
+#raw(codeblock, block: true, lang: "c++")
 #align(center, block[
 	== Советы по решению
 ])
