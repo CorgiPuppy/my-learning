@@ -109,6 +109,11 @@ $ (A * B) % m = ((A % m) * (B % m)) % m, $
 #let codeblock = read("../src/GCDandLCM/euclidean.cpp")
 #raw(codeblock, block: true, lang: "c++")
 #align(center, block[
+	== Формула для нахождения НОК
+])
+#let codeblock = read("../src/GCDandLCM/lcm.cpp")
+#raw(codeblock, block: true, lang: "c++")
+#align(center, block[
 	== Советы по решению
 ])
 1. Чтобы найти ПАРУ чисел, которые входят в диапазон и НОК которых входит в диапазон, достаточно проверить, входит ли умноженная на 2 левая граница в этот диапазон ($l dot.op 2 <= r$), и в ответ взять $l$ и $l dot.op 2$.
