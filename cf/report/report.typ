@@ -96,6 +96,20 @@ $ (A * B) % m = ((A % m) * (B % m)) % m, $
 ])
 #let codeblock = read("../src/modularArithmetic/powmod.cpp")
 #raw(codeblock, block: true, lang: "c++")
+
+#pagebreak()
+
+#align(center, block[
+	= Наибольший общий делитель (НОД, GCD) и Наименьшее Общее кратное (НОК, LCM)
+])
+#underline[Англ.]: #emph[GCD] - Greatest Common Divisor, или #emph[HCF] - Highest Common Factor. #emph[LCM] - Least Common Multiple.
+#align(center, block[
+	== Алгоритм Евклида (Euclidean algorithm)
+])
+#let codeblock = read("../src/GCDandLCM/euclidean.cpp")
+#raw(codeblock, block: true, lang: "c++")
 #align(center, block[
 	== Советы по решению
 ])
+1. Чтобы найти ПАРУ чисел, которые входят в диапазон и НОК которых входит в диапазон, достаточно проверить, входит ли умноженная на 2 левая граница в этот диапазон ($l dot.op 2 <= r$), и в ответ взять $l$ и $l dot.op 2$.
+2. Чтобы найти ДВЕ ПАРЫ чисел ($a$ и $b$, $c$ и $d$), НОД первых и НОК вторых которые одинаковы, достаточно $a$ и $b$ сделать взаимно-простыми, а $c$ и $d$ равными $1$.
