@@ -1,6 +1,7 @@
 #set page(
 	paper: "a4",
-	margin: (x: 0.8cm, y: 1.5cm)
+	margin: (x: 0.8cm, y: 1.5cm),
+	numbering: "1"
 )
 
 #set text(
@@ -102,6 +103,9 @@ $ (A * B) % m = ((A % m) * (B % m)) % m, $
 #align(center, block[
 	= Наибольший общий делитель (НОД, GCD) и Наименьшее Общее кратное (НОК, LCM)
 ])
+#align(center, block[
+	== Введение
+])
 #underline[Англ.]: #emph[GCD] - Greatest Common Divisor, или #emph[HCF] - Highest Common Factor. #emph[LCM] - Least Common Multiple.
 #align(center, block[
 	== Алгоритм Евклида (Euclidean algorithm)
@@ -118,3 +122,14 @@ $ (A * B) % m = ((A % m) * (B % m)) % m, $
 ])
 1. Чтобы найти ПАРУ чисел, которые входят в диапазон и НОК которых входит в диапазон, достаточно проверить, входит ли умноженная на 2 левая граница в этот диапазон ($l dot.op 2 <= r$), и в ответ взять $l$ и $l dot.op 2$.
 2. Чтобы найти ДВЕ ПАРЫ чисел ($a$ и $b$, $c$ и $d$), НОД первых и НОК вторых которые одинаковы, достаточно $a$ и $b$ сделать взаимно-простыми, а $c$ и $d$ равными $1$.
+
+#pagebreak()
+
+#align(center, block[
+	= Факториал
+])
+#align(center, block[
+	== Введение
+])
+$ n! = 1 dot.op 2 dot.op dots dot.op n $
+$ 0! = 1 "и" 1! = 1 $
