@@ -126,10 +126,26 @@ $ (A * B) % m = ((A % m) * (B % m)) % m, $
 #pagebreak()
 
 #align(center, block[
-	= Факториал
+	= Факториал и nCr (Число сочетаний)
 ])
 #align(center, block[
 	== Введение
 ])
-$ n! = 1 dot.op 2 dot.op dots dot.op n $
-$ 0! = 1 "и" 1! = 1 $
+$ n! = 1 dot.op 2 dot.op dots dot.op n, $
+$ 0! = 1 "и" 1! = 1. $
+$ C^(n)_(r) = frac(n!, r! dot.op (n - r)!). $
+#align(center, block[
+	== Алгоритм нахождения факториала числа
+])
+#let codeblock = read("../src/factorial-and-nCr/factorial.cpp")
+#raw(codeblock, block: true, lang: "c++")
+#align(center, block[
+	== Алгоритм нахождения количества сочетаний (с помощью факториала)
+])
+#let codeblock = read("../src/factorial-and-nCr/nCrUsingFactorial.cpp")
+#raw(codeblock, block: true, lang: "c++")
+#align(center, block[
+	== Алгоритм нахождения количества сочетаний (без использования факториала)
+])
+#let codeblock = read("../src/factorial-and-nCr/nCr.cpp")
+#raw(codeblock, block: true, lang: "c++")
